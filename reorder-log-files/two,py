@@ -1,0 +1,20 @@
+from operator import itemgetter
+
+class Solution:
+    def reorderLogFiles(self, logs: List[str]) -> List[str]:
+        letter_logs = []
+        digit_logs = []
+        for log in logs:
+            words = log.split(" ", 2)
+            if words[1].isnumeric():
+                digit_logs.append(log)
+            else:
+                words = log.split(" ", 1)
+                letter_logs.append(words)
+            
+        letter_logs = sorted(letter_logs, key=itemgetter(1, 0))
+        return [" ".join(log) for log in letter_logs] + digit_logs
+    
+# Runtime: 44 ms, faster than 70.74% of Python3 online submissions for Reorder Log Files.
+# Memory Usage: 13.3 MB, less than 6.17% of Python3 online submissions for Reorder Log Files.
+
