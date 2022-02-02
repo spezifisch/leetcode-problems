@@ -9,9 +9,9 @@ class Solution:
                     max_ones = ones
             else:
                 ones = 0
-                
+
         return max_ones
-    
+
+
 # Runtime: 76 ms, faster than 72.81% of Python3 online submissions for Max Consecutive Ones.
 # Memory Usage: 13.4 MB, less than 6.50% of Python3 online submissions for Max Consecutive Ones.
-

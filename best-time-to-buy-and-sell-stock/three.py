@@ -11,7 +11,7 @@ class Solution:
                     max_profit = profit
 
         return max_profit
-    
+
+
 # Runtime: 40 ms, faster than 99.01% of Python3 online submissions for Best Time to Buy and Sell Stock.
 # Memory Usage: 13.9 MB, less than 5.08% of Python3 online submissions for Best Time to Buy and Sell Stock.
-

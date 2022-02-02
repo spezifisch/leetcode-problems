@@ -13,11 +13,11 @@ class Solution:
                     del nums[i]
                 else:
                     i += 1
-            
+
             previous = val
-            
+
         return len(nums)
+
 
 # Runtime: 80 ms, faster than 43.17% of Python3 online submissions for Remove Duplicates from Sorted Array.
 # Memory Usage: 14.7 MB, less than 5.43% of Python3 online submissions for Remove Duplicates from Sorted Array.
-

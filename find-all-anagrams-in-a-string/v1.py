@@ -23,5 +23,6 @@ class Solution:
 
         return result
 
+
 # Runtime: 1924 ms, faster than 8.04% of Python3 online submissions for Find All Anagrams in a String.
 # Memory Usage: 122.9 MB, less than 10.05% of Python3 online submissions for Find All Anagrams in a String.

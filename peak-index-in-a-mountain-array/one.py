@@ -6,9 +6,9 @@ class Solution:
             if elem > max_value:
                 max_value = elem
                 max_idx = i
-                
+
         return max_idx
-    
+
+
 # Runtime: 44 ms, faster than 39.84% of Python3 online submissions for Peak Index in a Mountain Array.
 # Memory Usage: 14.4 MB, less than 5.42% of Python3 online submissions for Peak Index in a Mountain Array.
-

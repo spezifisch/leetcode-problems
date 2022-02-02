@@ -4,11 +4,10 @@ class Solution:
             place = S.find("abc")
             if place < 0:
                 break
-                
-            S = S[:place] + S[place + 3:]
-            
+
+            S = S[:place] + S[place + 3 :]
+
         if len(S) > 0:
             return False
-        
+
         return True
-    

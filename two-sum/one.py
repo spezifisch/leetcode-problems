@@ -9,6 +9,6 @@ class Solution:
                 if nums[a_idx] + nums[b_idx] == target:
                     return [a_idx, b_idx]
 
-#Runtime: 8924 ms, faster than 5.01% of Python3 online submissions for Two Sum.
-#Memory Usage: 13.7 MB, less than 33.49% of Python3 online submissions for Two Sum.
 
+# Runtime: 8924 ms, faster than 5.01% of Python3 online submissions for Two Sum.
+# Memory Usage: 13.7 MB, less than 33.49% of Python3 online submissions for Two Sum.

@@ -11,9 +11,9 @@ class Solution:
                 zeroes += 1
             else:
                 pos += 1
-                
+
         nums += [0] * zeroes
-        
+
+
 # Runtime: 64 ms, faster than 35.38% of Python3 online submissions for Move Zeroes.
 # Memory Usage: 14.5 MB, less than 5.21% of Python3 online submissions for Move Zeroes.
-

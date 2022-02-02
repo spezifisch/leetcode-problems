@@ -5,7 +5,7 @@ class Solution:
             "{": "}",
             "[": "]",
         }
-        
+
         stack = []
         for c in s:
             if not len(stack) or c in ends.keys():
@@ -18,9 +18,8 @@ class Solution:
                     return False
                 elif c != ends[start]:
                     return False
-        
+
         if len(stack):
             return False
-        
-        return True
 
+        return True

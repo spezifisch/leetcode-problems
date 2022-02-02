@@ -1,5 +1,6 @@
 import bisect
 
+
 class MyHashSet:
     def __init__(self):
         """
@@ -9,7 +10,7 @@ class MyHashSet:
 
     def _get_idx(self, key: int) -> int:
         return bisect.bisect_left(self.values, key)
-        
+
     def add(self, key: int) -> None:
         idx = self._get_idx(key)
         try:
@@ -42,4 +43,3 @@ class MyHashSet:
 
 # Runtime: 148 ms, faster than 65.30% of Python3 online submissions for Design HashSet.
 # Memory Usage: 17.1 MB, less than 41.46% of Python3 online submissions for Design HashSet.
-

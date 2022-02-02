@@ -4,8 +4,8 @@ class Solution:
         for val, index in queries:
             A[index] += val
             answer.append(sum([x if x & 1 == 0 else 0 for x in A]))
-            
+
         return answer
 
-# Time Limit Exceeded
 
+# Time Limit Exceeded

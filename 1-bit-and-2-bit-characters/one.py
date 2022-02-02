@@ -11,9 +11,9 @@ class Solution:
                     last_is_one_bit = True
             else:
                 two_bit_started = False
-        
+
         return last_is_one_bit
-    
+
+
 # Runtime: 36 ms, faster than 97.38% of Python3 online submissions for 1-bit and 2-bit Characters.
 # Memory Usage: 13.2 MB, less than 11.36% of Python3 online submissions for 1-bit and 2-bit Characters.
-

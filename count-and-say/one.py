@@ -12,15 +12,15 @@ class Solution:
                 while cpos < len(say) and say[cpos] == c:
                     count += 1
                     cpos += 1
-                    
+
                 new_say += str(count) + c
                 pos += count
-                
+
             say = new_say
             i += 1
-            
+
         return say
-    
+
+
 # Runtime: 64 ms, faster than 17.96% of Python3 online submissions for Count and Say.
 # Memory Usage: 13.1 MB, less than 5.11% of Python3 online submissions for Count and Say.
-

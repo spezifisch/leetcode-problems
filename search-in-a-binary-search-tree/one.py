@@ -5,6 +5,7 @@
 #         self.left = None
 #         self.right = None
 
+
 class Solution:
     @staticmethod
     def searchValue(root: TreeNode, val: int) -> TreeNode:
@@ -15,13 +16,13 @@ class Solution:
         if val > root.val and root.right is not None:
             return Solution.searchValue(root.right, val)
         return None
-    
+
     def searchBST(self, root: TreeNode, val: int) -> TreeNode:
         if root is None:
             return []
-        
+
         return Solution.searchValue(root, val)
-        
+
+
 # Runtime: 84 ms, faster than 65.92% of Python3 online submissions for Search in a Binary Search Tree.
 # Memory Usage: 15.1 MB, less than 5.30% of Python3 online submissions for Search in a Binary Search Tree.
-

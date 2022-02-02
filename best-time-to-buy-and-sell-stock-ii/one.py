@@ -1,4 +1,4 @@
-class Solution:    
+class Solution:
     def maxProfit(self, prices: List[int]) -> int:
         profit = 0
         can_buy = True
@@ -14,9 +14,9 @@ class Solution:
                 if prices[prev] <= price >= prices[post]:
                     profit += price
                     can_buy = True
-                
+
         return profit
+
 
 # Runtime: 52 ms, faster than 28.27% of Python3 online submissions for Best Time to Buy and Sell Stock II.
 # Memory Usage: 13.7 MB, less than 5.06% of Python3 online submissions for Best Time to Buy and Sell Stock II.
-

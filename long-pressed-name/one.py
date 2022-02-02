@@ -4,7 +4,7 @@ class Solution:
             return True
         if not typed:
             return False
-        
+
         name = list(reversed(name))
         typed = list(reversed(typed))
         last_name_char = None
@@ -18,9 +18,9 @@ class Solution:
                 typed.pop()
             else:
                 return False
-            
+
         return True
-    
+
+
 # Runtime: 40 ms, faster than 55.36% of Python3 online submissions for Long Pressed Name.
 # Memory Usage: 13 MB, less than 7.84% of Python3 online submissions for Long Pressed Name.
-

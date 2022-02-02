@@ -6,12 +6,12 @@ class Solution:
             lcnt = self.s.count(chain)
             count += lcnt
             chain = chain[0] + chain + chain[-1]
-            
+
         return count
-                                             
+
     def countBinarySubstrings(self, s: str) -> int:
         self.s = s
         return self.getChainCount("01") + self.getChainCount("10")
 
-# Time Limit Exceeded
 
+# Time Limit Exceeded

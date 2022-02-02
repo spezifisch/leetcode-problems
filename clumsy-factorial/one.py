@@ -6,15 +6,14 @@ class Solution:
             opcode = (i - 1) % 4
             operand = N - i
             answer += [opcodes[opcode], str(operand)]
-                
+
         answer = eval("".join(answer))
-                
-        lim = -2**31
+
+        lim = -(2**31)
         if answer < lim:
             return lim
         lim = 2**31 - 1
         if answer > lim:
             return lim
-        
+
         return answer
-    

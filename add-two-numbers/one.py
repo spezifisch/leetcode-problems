@@ -4,6 +4,7 @@
 #         self.val = x
 #         self.next = None
 
+
 class Solution:
     @staticmethod
     def llToNumber(l):
@@ -13,8 +14,8 @@ class Solution:
             val += l.val * 10**exp
             exp += 1
             l = l.next
-        return val    
-    
+        return val
+
     @staticmethod
     def numberToLL(val):
         # start with biggest exponent
@@ -23,18 +24,18 @@ class Solution:
         exp -= 1
         while exp >= 0:
             old_ll = ll
-            val -= ll.val * 10**(exp+1)
+            val -= ll.val * 10 ** (exp + 1)
             new_ll = ListNode(int(val / 10**exp))
             new_ll.next = old_ll
             ll = new_ll
             exp -= 1
         return ll
-    
+
     def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
         x1 = self.llToNumber(l1)
         x2 = self.llToNumber(l2)
-        return self.numberToLL(x1+x2)
-        
+        return self.numberToLL(x1 + x2)
+
+
 # Runtime: 144 ms, faster than 37.96% of Python3 online submissions for Add Two Numbers.
 # Memory Usage: 13.2 MB, less than 5.21% of Python3 online submissions for Add Two Numbers.
-

@@ -4,6 +4,7 @@
 #         self.val = x
 #         self.next = None
 
+
 class Solution:
     def removeNthFromEnd(self, head: ListNode, n: int) -> ListNode:
         length = 0
@@ -14,15 +15,15 @@ class Solution:
 
         if length <= 1:
             return []
-            
+
         node_to_remove = length - n
         first = node_to_remove - 1
         second = node_to_remove + 1
         first_node = second_node = None
-        
+
         if node_to_remove == 0:
             return head.next
-        
+
         i = 0
         cur = head
         while cur:
@@ -31,14 +32,14 @@ class Solution:
             elif i == second:
                 second_node = cur
                 break
-            
+
             cur = cur.next
             i += 1
-            
+
         first_node.next = second_node
-        
+
         return head
-    
+
+
 # Runtime: 44 ms, faster than 49.47% of Python3 online submissions for Remove Nth Node From End of List.
 # Memory Usage: 13.1 MB, less than 5.60% of Python3 online submissions for Remove Nth Node From End of List.
-
