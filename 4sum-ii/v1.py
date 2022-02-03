@@ -15,3 +15,7 @@ class Solution:
                 count += sums12.get(-s, 0)
 
         return count
+
+
+# Runtime: 741 ms, faster than 82.16% of Python3 online submissions for 4Sum II.
+# Memory Usage: 14.1 MB, less than 99.75% of Python3 online submissions for 4Sum II.
