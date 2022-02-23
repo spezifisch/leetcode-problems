@@ -26,3 +26,7 @@ class Solution:
 
         self.node_map = {}
         return self.dfs(node)
+
+
+# Runtime: 62 ms, faster than 32.79% of Python3 online submissions for Clone Graph.
+# Memory Usage: 14.5 MB, less than 66.44% of Python3 online submissions for Clone Graph.
