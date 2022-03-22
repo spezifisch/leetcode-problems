@@ -7,8 +7,8 @@ class Solution:
 
         # get difference to target value of k
         diff = k - (a_count + 26 * z_count)
-        # turn "a" to "z" as long as our total is too high by more than 25,
-        # turn "z" to "a" in the same way
+        # turn "z" to "a" as long as our total is too high by more than 25,
+        # turn "a" to "z" in the same way
         while abs(diff) > 25:
             if diff < 0:
                 # our total is too high. turn "z" into "a"
