@@ -7,7 +7,7 @@ type Grid struct {
 	queensPlaced int
 	// array index = row of queen; value = col of queen
 	queens []int
-	// array index = row of blocked field; 1 bit in value = blocked column in in current row
+	// array index = row of blocked field; 1 bit in value = blocked column in current row
 	blockedFields []int
 
 	// 1 bit set where field is valid
