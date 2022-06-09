@@ -17,4 +17,17 @@ Most of the solutions contain the result as a comment on the bottom of the file,
 ```
 
 Note that runtime and memory usage given by Leetcode isn't very consistent between runs of the same code.
-Runs a few months later also take sometimes longer due to newly added test cases or version upgrades.
+Sometimes runs a few months later also take longer due to newly added test cases or version upgrades.
+
+## Formatting
+
+```shell
+# install git hook
+pip install pre-commit
+pre-commit install
+
+# run manually
+pre-commit run --all-files
+```
+
+This autoformats the following code files: Python, C++, Golang.
