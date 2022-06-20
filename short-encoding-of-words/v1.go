@@ -14,7 +14,7 @@ func (t *TrieNode) InsertSpecial(word string) (addedNodes, addedWords int) {
 	for i := range word {
 		// begin at last letter of the word
 		// only english lowercase letters are possible,
-		// so we're using an children array with static size
+		// so we're using a children array with static size
 		idx := int(word[len(word)-1-i]) - int('a')
 
 		// add a new branch with a child to the Trie if needed
